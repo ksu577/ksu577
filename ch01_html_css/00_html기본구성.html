@@ -2,18 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 페이지명, 북마크시 들어가는 제목 -->
     <title>My Way</title>
 
+
+    <!-- 파비콘(위에 조그맣게 나오는 이미지) 넣기 -->
+    <!-- 파비콘용 link 태그는 head 태크 내에 있어야 동작 -->
+    <link rel="shortcut icon" href="../resources/images/24283C3858F778CA2E.jpeg">
+
+    <!-- style 태그 내에는 css 코드 작성 -->
+
  <style> 
+ /*style 태그 내에서는 주석이 이 표시로 바뀐다*/
   .text-title{
-    background-color: aquamarine;
-    color: aliceblue;
+    background-color: aquamarine; /*글자 배경 색*/
+    color: aliceblue; /*글자 색*/
+    text-align: center; /*글자 위치*/
   }
 </style>
 </head>
 <body>
+<!-- body 안에는 html 태그 요소들 작성 -->
+<!-- h태그는 글자크기 및 굵음, 마진 등이 정해져 있음-->
+<!-- 한줄 다 차지 -->
+
     <h1 class="text-title">난 나의 길을 걷는다.</h1>
+
+    <!-- 버튼 클릭시 onclick에 입력한 f_click() 함수가 실행됨 -->
     <input type="button" value="추천" onclick="f_click()">
     
     <script> 
@@ -21,7 +38,9 @@
             alert("돈 벌고 싶다.")
         }
 
-
+       /*이 태그 내에서는 자바 스크립트 코드 작성 */
     </script>
+
+
 </body>
 </html>
