@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .container {
+            width: 1000px;
+            height: 1000px;
+
+        }
+
+        .apple {
+            /* 포지션은 스태틱이 기본값 */
+            position: static;
+            /* 포지션 스태틱은 래프트와 탑을 주더라도 안 움직인다. */
+            left: 100px;
+            top: 100px;
+        }
+
+        .banana {
+            /* 포지션 릴레이 티브는 원래 지점에서 입력한 값 만큼 이동 가능 */
+            position: relative;
+            left: 400px;
+            top: 100px;
+        }
+
+        .melon {
+            /* 부모의 좌측 상단 모서리를 기준으로 입력한 값 만큼 이동 가능  */
+            position: absolute;
+            left: 300px;
+            top: 200px;
+        }
+
+        .mother {
+            position: relative
+        }
+
+        .mother>div {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .father {
+            position: relative
+        }
+
+        .father>div {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .parent {
+            position: relative;
+        }
+
+        .parent>div {
+            /* 부모 크기의 50% */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        }
+
+        .quick{
+            /* 브라우저를 기준으로 위치가 고정 */
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" >
+        <div class="apple" >사과</div>
+        <div class="banana">바나나</div>
+        <div class="melon" id="#top">멜론</div>
+
+        <div class="mother">
+            <div>엄마</div>
+        </div>
+        <div class="father">
+            <div>아빠</div>
+        </div>
+        <div class=parent>
+            <div>부모</div>
+        </div>
+    </div>
+
+    <div class="quick">
+        <!-- href태그에 특정 아이디 넣으면 클릭시 해당 태그 상단으로 이동 -->
+        <a href="#top">!</a>
+    </div>
+</body>
+
+</html>

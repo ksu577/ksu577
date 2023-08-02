@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS적용순서</title>
+
+<style>
+
+    /*전체 태그*/
+*{ 
+    margin: 200px;
+}
+
+/*전체 div 태그의 스타일*/
+div{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    border: 2px solid black;
+}
+
+.box{
+    margin: 100px;
+}
+
+#box{
+    margin: 150px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="box"></div>
+    <div id="box" class="box"></div>
+    <div id="box" class="box" style="margin: 200px;"></div>
+</body>
+</html>

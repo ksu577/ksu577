@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본선택자</title>
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        img{
+            width: 400px;
+            height: 300px;
+        }
+
+        .cl-title{
+            background-color: yellow;
+        }
+
+        /*id태그에는 해당 태그로 선택*/
+        #container{
+            height: 700px;
+            background-color: antiquewhite;
+        }   
+        
+        input[type=text]{
+            height: 30px;
+            width: 200px;
+        }  
+         input[type=button]{
+            margin: 20px;
+            height: 60px;
+            width: 40px;
+        }
+        /*>div 선택자의 자손의 해당하는 역할*/
+       #container > div{
+        height: 100px;
+        border: 1px solid;
+       } 
+        
+       /*선택자 div: 선택자의 모든 자손에 해당하는 div 자손이 해당*/
+       #container div{
+        border: 1px solid;
+       } 
+
+
+
+        </style>
+</head>
+<body>
+    <h1 class="cl-title">제목</h1>
+    <p>서브제목</p>
+
+    
+
+    <img src="../resources/images/24283C3858F778CA2E.jpeg" alt="">
+    <img src="../resources/images/661ff7f9-1887-4b56-a301-0899453ff1a5.jpg" alt="">
+    
+    
+    <!-- id는 전체 문서 내에서 고유값을 부여한다. 특정 태그를 하나 선택하기 위해 사용하는 것이 id -->
+    <div id="container">
+        <div>1</div>
+        <div>
+        <div> 2</div>
+        </div>
+        <div>3</div>
+    </div>
+
+    <input type="text">
+    <input type="button">
+
+
+</body>
+</html>
