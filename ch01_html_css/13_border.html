@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+
+    <style>
+    div{
+        width:100px;
+        height:100px;
+        border: 10px solid black;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+
+        border-top: 2px dashed red;
+    }
+
+    .shadow{
+        box-shadow: 10px 10px 2px 2px gray;
+        border:0;
+    }
+
+    .radius{
+        border-radius: 10px;
+    }
+
+    .profile{
+        border-radius: 50px;
+
+        background-image: url(https://cdn.imweb.me/upload/S201910012ff964777e0e3/62f9a36ea3cea.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .triangle{
+        width: 0;
+        height: 0;
+
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid red;
+        border-left: 30px solid rgba(0, 0, 0,0);            
+        border-right: 30px solid #ffffff00;
+    }
+    
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <div class="shadow"></div>
+    <div class="radius"></div>
+    <div class="profile"></div>
+    <div class="triangle"> </div>
+</body>
+</html>

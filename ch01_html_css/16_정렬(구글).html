@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정렬(구글)</title>
+    <style>
+        .header img{
+            border-radius: 25px;
+            margin-left: 10px;
+            border: 2px solid;
+            border-color: red green yellow blue;
+        }
+        .header a{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+        }
+        .header a:hover{
+            text-decoration: underline;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .logo{
+            height: 250px;
+            text-align: center;
+        }
+        .logo img{
+            width: 400px;
+        }
+        .search-box input{
+            width: 400px;
+            height: 40px;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0px 0px 2px 2px gray;
+            padding-left: 10px;
+        }
+        .search-box{
+            height: 50px;
+            text-align: center;
+        }
+        .bottom{
+            height: 200px;
+        }
+        .site-box{
+            width: 400px;
+            /* 부모의 높으로 적용된다. */
+            height: 100%;
+            margin: auto;
+            display: flex;
+            /* 자식요소가 부모요소의 크기를 벗어나는 경우 */
+            /* wrap이면 줄바꿈이 일어남, nowrap이면 우겨넣는다. */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .site-box > div:hover{
+            background-color: gainsboro;
+        }
+        .site-box img{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid;
+        }
+        .site-box > div{
+            /* 수식이 계산된 PX단위가 적용됨 */
+            width: calc(100% / 5 - 2px);
+            height: 100px;
+
+            display: flex;
+            /* 정렬 방향을 수직으로 변경 */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .site-box p{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href=""> Gmail </a>
+            <a href=""> 이미지 </a>
+            <img width="50" height="50" src="https://item.kakaocdn.net/do/c8f537b46fbf4a213948c069f4977c919f17e489affba0627eb1eb39695f93dd" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://st.kakaocdn.net/shoppingstore/editor/20220603164855_7a82f874d42547b4b7fce7f41e580d9c.jpeg" alt="">
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Google 검색 또는 URL 입력">
+        </div>
+        <div class="bottom">
+            <div class="site-box">
+                <div>
+                    <img src="https://item.kakaocdn.net/do/798cb2af6413e4258dc062e14c2c1c9815b3f4e3c2033bfd702a321ec6eda72c" alt="">
+                    <p>토끼찡</p>
+                </div>
+                <div>
+                    <img src="https://ilovecharacter.com/news/data/20220930/p1065595687486942_805_thum.jpg" alt="">
+                    <p>곰돌찡</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-LBMSKkBNJ59kCM54MH3PRfN-XJ9uMZBKg&usqp=CAU" alt="">
+                    <p>유미어스</p>
+                </div>
+                <div>
+                    <img src="https://item.kakaocdn.net/do/ea891e9ce2478cdb611269965ca3cda79f17e489affba0627eb1eb39695f93dd" alt="">
+                    <p>유미어스</p>
+                </div>
+                <div>
+                    <img src="https://item.kakaocdn.net/do/798cb2af6413e4258dc062e14c2c1c987f9f127ae3ca5dc7f0f6349aebcdb3c4" alt="">
+                    <p>유미어스</p>
+                </div>
+                <div>
+                    <img src="https://item.kakaocdn.net/do/798cb2af6413e4258dc062e14c2c1c98ce9463e040a07a9462a54df43e1d73f1" alt="">
+                    <p>유미어스</p>
+                </div>
+                <div>
+                    <img src="https://ilovecharacter.com/news/data/20230301/p1065579695298801_543_thum.jpg" alt="">
+                    <p>유미어스</p>
+                </div>
+                <div>
+                    <img src="https://item.kakaocdn.net/do/798cb2af6413e4258dc062e14c2c1c98616b58f7bf017e58d417ccb3283deeb3" alt="">
+                    <p>유미어스</p>
+                </div>
+                <div>
+                    <img src="https://item.kakaocdn.net/do/c8f537b46fbf4a213948c069f4977c9115b3f4e3c2033bfd702a321ec6eda72c" alt="">
+                    <p>유미어스</p>
+                </div>
+                <div>
+                    <img src="https://item.kakaocdn.net/do/798cb2af6413e4258dc062e14c2c1c989f17e489affba0627eb1eb39695f93dd" alt="">
+                    <p>유미어스</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
